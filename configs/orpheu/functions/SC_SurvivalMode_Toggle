@@ -1,0 +1,25 @@
+{
+    "name" : "SC_SurvivalMode_Toggle",
+    "library" : "mod",
+    "info" : "How to find: AngelScript in-game docs conveniently point to this function",
+    "arguments" :
+    [
+        {
+            "type" : "int"
+        },
+    ],
+    "identifiers" :
+    [
+        {
+            "os"    : "linux",
+            "mod"   : "svencoop",
+            "value" : [0x83, "*", "*", 0x8B, "*", "*", "*", 0x80, "*", "*", "*", 0x75, "*", 0xC7, "*", "*", 0x04, "*", "*", 0x00, "*", 0x89, "*", "*", 0xE8, "*", "*", 0xFF, "*", 0x83, "*", "*", 0xC3, 0x90]
+        },
+        {
+            "os"    : "windows",
+            "mod"   : "svencoop",
+            "info"  : "quite different logic from linux but strings point out to same behavior?",
+            "value" : [0x56, 0x8B, "*", 0x80, "*", "*", "*", 0x74, "*", 0xC6, "*", "*", "*", 0xE8, "*", "*", 0x00, "*", 0x6A, "*", 0x6A, "*", 0x6A, "*", 0x6A, "*", 0x68, "*", "*", 0x40, "*", 0x6A, "*", 0xE8, "*", "*", 0x12, "*", 0x83]
+        }
+    ]
+}

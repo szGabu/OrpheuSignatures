@@ -1,0 +1,29 @@
+{
+    "name" : "SC_SurvivalMode_IsActive",
+    "library" : "mod",
+    "info" : "How to find: Search a simple return that evaluates against the value '2', uses the exact logic as older versions with DWARF.",
+    "arguments" :
+    [
+        {
+            "type" : "int"
+        },
+    ],
+    "return" :
+    {
+        "type" : "bool"
+    },
+    "identifiers" :
+    [
+        {
+            "os"    : "linux",
+            "mod"   : "svencoop",
+            "value" : [0x8B, 0x44, "*", "*", 0x83, 0x78, "*", "*", 0x0F, 0x94, "*", 0xC3]
+        },
+        {
+            "os"    : "windows",
+            "mod"   : "svencoop",
+            "value" : [0x83, 0x79, "*", "*", 0x0F, 0x94, "*", 0xC3]
+        }
+    ]
+}
+

@@ -1,0 +1,29 @@
+{
+    "name" : "SC_SurvivalMode_GetLivingPlayersCount",
+    "library" : "mod",
+    "info" : "How to find: Search this condition 'if (*(int *)(something + something) < 1)' ",
+    "arguments" :
+    [
+        {
+            "type" : "int"
+        },
+    ],
+    "return" :
+    {
+        "type" : "int"
+    },
+    "identifiers" :
+    [
+        {
+            "os"    : "linux",
+            "mod"   : "svencoop",
+            "value" : [0x55, 0x57, 0x56, 0x53, 0x83, "*", "*", 0xE8, "*", "*", 0xD9, "*", 0x81, "*", "*", 0x50, "*", "*", 0x8D, "*", "*", 0x3E, "*", "*", 0x8B, "*", "*", 0x8B, "*", "*", 0x00, "*", "*", 0x85, "*", 0x0F, "*", "*", 0x00, "*", "*", 0xBE, "*", "*", 0x00, "*", 0x31, "*", 0x8D, "*", "*", 0x04, "*", "*", 0x89, "*", "*", "*", 0x8D, "*", "*", 0x04, "*", "*", 0x89, "*", "*", "*", 0xEB, "*"]
+        },
+        {
+            "os"    : "windows",
+            "mod"   : "svencoop",
+            "info"  : "90% sure this is the signature",
+            "value" : [0xA1, "*", "*", 0x4F, "*", 0x56, 0x57, 0xBE, "*", "*", 0x00, "*", 0x33, "*", 0x39, "*", "*", 0x00, "*", "*", 0x7C, "*", 0x56, 0xE8, "*", "*", 0x12, "*", 0x8B, "*", 0x83, "*", "*", 0x85, "*", 0x74, "*", 0x8B, "*", 0x8B, "*", "*", 0x00, "*", "*", 0xFF, "*", 0x84, "*", 0x74, "*", 0x47]
+        }
+    ]
+}
