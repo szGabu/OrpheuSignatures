@@ -1,6 +1,7 @@
 {
     "name" : "SC_ShouldBypassEntity",
     "library" : "mod",
+    "info" : "Function sig: int PlayerShouldBypassEntity(CPlayerMove * this, physent_t * pe)",
     "arguments" :
     [   
         {
@@ -19,7 +20,12 @@
         {
             "os"    : "linux",
             "mod"   : "svencoop",
-            "value" : [0x55, 0x57, 0x56, 0x53, 0x83, "*", "*", 0xE8, "*", "*", "*", "*", 0x81, "*", "*", "*", "*", "*", 0x8B, "*", "*", "*", 0xD9, "*", 0xD9, "*", "*", "*", 0xD9, "*", "*", "*", 0xD9, "*", "*", "*", 0x8B, "*", "*", "*", 0x8B, "*", "*", "*", "*", "*", 0x8B, "*", "*", "*", "*", "*", 0x85, "*", 0x0F, "*", "*", "*", "*", "*"]
+            "value" : [0x55, 0x57, 0x56, 0x53, 0x8B, 0x5C, 0x24, "*", 0x8B, 0x54, 0x24, "*", 0x8B, 0x8B]
+        },
+        {
+            "os"    : "windows",
+            "mod"   : "svencoop",
+            "value" : [0x53, 0x8B, 0xD9, 0x56, 0x57, 0x8B, 0x8B]
         }
     ]
 }

@@ -1,6 +1,7 @@
 {
     "name" : "PM_GetPlayerMove",
     "library" : "mod",
+    "info" : "playermove_s * PM_GetPlayerMove(void)",
     "return" :
     {
         "type" : "playermove_s *"
@@ -10,7 +11,12 @@
         {
             "os"    : "linux",
             "mod"   : "svencoop",
-            "value" : [0x53, 0x83, 0xEC, 0x14, 0xE8, 0xBB, 0xDA, 0xF5, 0xFF, 0x81, 0xC3, 0x8B, 0x7A, 0x67, 0x00, 0x8B, 0x83, 0x88, 0xC7, 0xFF, 0xFF]
+            "value" : [0xE8, "*", "*", "*", "*", 0x05, 0x59, 0x05, 0x5A, 0x00]
+        },
+        {
+            "os"    : "windows",
+            "mod"   : "svencoop",
+            "value" : [0xA1, 0xF0, 0xF7, 0x50, 0x10, 0xC3, "*", "*", "*", "*", "*", "*", "*", "*", "*", "*"]
         }
     ]
 }
