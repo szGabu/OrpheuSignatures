@@ -5,8 +5,8 @@
     "arguments" :
     [
         {
-            "type" : "int"
-        },
+            "type" : "pointer"
+        }
     ],
     "identifiers" :
     [

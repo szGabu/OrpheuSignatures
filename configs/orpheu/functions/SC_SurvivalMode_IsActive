@@ -5,8 +5,8 @@
     "arguments" :
     [
         {
-            "type" : "int"
-        },
+            "type" : "pointer"
+        }
     ],
     "return" :
     {
@@ -26,4 +26,3 @@
         }
     ]
 }
-
